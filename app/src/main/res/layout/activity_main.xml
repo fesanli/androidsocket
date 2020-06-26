@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/switch_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="8dp"
+        android:checked="false"
+        android:text="@string/switch_server"
+        app:layout_constraintStart_toStartOf="@+id/et_hedefIP"
+        app:layout_constraintTop_toBottomOf="@+id/et_hedefIP" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="22dp"
+        android:onClick="connect"
+        android:text="@string/btnConnect"
+        app:layout_constraintStart_toStartOf="@+id/switch_server"
+        app:layout_constraintTop_toBottomOf="@+id/switch_server" />
+
+    <EditText
+        android:id="@+id/et_hedefIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:hint="@string/def_ip"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:text="@string/def_ip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_GidecekMesaj"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="@string/mesaj"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Gonder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_mesajHavuzu"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/et_mesajHavuzu"
+        android:layout_width="371dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="6dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/mesaj"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btn_Gonder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:onClick="gonder"
+        android:text="@string/gonder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/et_GidecekMesaj"
+        app:layout_constraintTop_toBottomOf="@+id/et_mesajHavuzu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

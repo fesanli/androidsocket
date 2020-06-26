@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AndroidSocketServer</string>
+    <string name="def_ip">192.168.1.35</string>
+    <string name="switch_server">Server (Alıcı)</string>
+    <string name="btnConnect">BAGLAN</string>
+    <string name="mesaj">Mesaj</string>
+    <string name="gonder">GONDER</string>
+</resources>
