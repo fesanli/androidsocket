@@ -115,6 +115,7 @@ public class tcp {
     // Global
     public void mesajGonder(String mesaj){
         // mesaj alicisini hedefIP'den (global) al
+
         baglan(hedefIP);
 
         // gidecek mesajlar bunlar
